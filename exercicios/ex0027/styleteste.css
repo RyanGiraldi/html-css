@@ -1,0 +1,39 @@
+div {
+            display: inline-block;
+            background-color: rgb(255, 255, 255);
+            width: 100px;
+            height: 200px;
+            border: black solid;
+        }
+
+        #teste1 {
+            background-color: aliceblue;
+        }
+
+        #teste2 {
+            background-color: blue;
+        }
+
+        #teste3 {
+            background-color: purple;
+        }
+
+        #teste4 {
+            background-color: red;
+        }
+
+        #teste5 {
+            background-color: antiquewhite;
+        }
+
+        div {
+            margin: 20px;
+        }
+
+        .click:hover {
+            visibility: visible;
+            flex: 0 1 1000PX; /*largura ao abrir*/
+            scale: 1.1; 
+            z-index: 10;
+            opacity: 1;
+        }

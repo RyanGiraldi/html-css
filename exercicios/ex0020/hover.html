@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        div > p {
+            display: none; /*esconde o conteúdo*/
+        }
+        
+        /*div = caixa/seletor, :hover= adicionando conteúdo, > p = mostrando onde esse conteúdo vai ser aplicado na div*/
+        div:hover > p {
+            display: block; /*faz o texto escondido aparecer*/
+            color: white; /*cor do texto escondido*/
+            background-color: red; /*cor do fundo do texto escondido*/
+            width: 300px; /*largura da cor atrás do texto escondido*/
+        }
+        
+        /*Deixando o "passe o mouse aqui vermelho" quando passar o mouse me cima, se n passar o mouse ele fica normal*/
+        div:hover {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    
+    <!--Div = caixa que tem o conteúdo dentro-->
+    <div>Passe o mouse aqui <!-- Conteúdo visivel na página-->
+        <p>Texto Escondido...</p> <!--Conteúdo escondido na página (só aparece quando, passr o mouse em cima  do "passe o mouse aqui")-->
+    </div>
+
+    <p>Fim do Exemplo</p>
+</body>
+</html>

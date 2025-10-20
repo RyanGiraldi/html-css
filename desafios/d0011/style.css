@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body  {
+    background: url(espaco.jpg) top center/cover no-repeat ;
+}
+
+.foto {
+    display: flex; /*Transforma o container em um contêiner flexível.*/
+
+    width:  100vw;
+    /*Garante que o container de centralização ocupe toda a largura (vw = viewport width) e altura (vh = viewport height) da tela do usuário.*/
+    height: 100vh;
+
+    justify-content: center; /*Move o conteúdo (o astronauta) para o centro do eixo horizontal (da esquerda para a direita).*/
+    align-items: center; /*Move o conteúdo (o astronauta) para o centro do eixo vertical (de cima para baixo).*/
+}

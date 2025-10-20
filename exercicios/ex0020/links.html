@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = clildren
+       
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Color = colocando cor no link, tex-decoration:none = tirando o underline do link, font-weight: bold =colocando em negrito */
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: normal;
+        }
+          
+        /* A seletor do link, visited = link  já visitado, color definindo a cor do link visitado */
+        a:visited {
+            color: blue;
+        }
+        
+        /* A seletor da tag, hover personalizando o link quando passar o mouse  em cima, bakcground-color= colocando uma cor quando vc passa o mouse em cima do link, border-radius= arredondando a cor que aparece quando vc joga o mouse em cima*/
+        a:hover {
+            color: black;
+            text-decoration: underline;
+            background-color: rgba(0, 255, 255, 0.178);
+            border-radius: 5px;
+        }
+        
+
+       /* A seletor, active = quando vc clica e segura o botão esquerdo do mouse nele */
+        a:active {
+            color: aqua;
+        }
+        
+        /* .especial = seletor da class, ::after = colocando conteúdo dps do link (after = depois), content = conteúdo */
+        .especial::after {
+            content: '⇤';
+        }
+        
+
+        /* .especial = seletor da class, ::before = colocando conteúdo antes do link (before = antes), content = conteúdo */
+        .especial::before {
+            content: '⇥';
+        }
+
+        /* .especial = seletor, font-style = colocando italic no texto, font-weight = colocando em negrito*/  
+        .especial {
+            font-style: italic;
+            font-weight: bolder;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+
+    <!--Lista Com pontos-->
+    <ul>
+        <!--li = conteúdo da lista-->
+        <li><a href="https://www.crunchyroll.com/pt-br/discover?srsltid=AfmBOooD4Nrl-dYrrcSTYlpKYtScwQm7sFaW-Ewt4ITzNmdD95_63Y7r" target="_blank">Github</a></li>
+        <li><a href="https://www.instagram.com/p/DJJoFOuuqFvUDaKugmam2AHC5nqVNV_Sv5vdi80/?img_index=6" class="especial">Youtube</a></li>
+        <li><a href="https://goatroyale.com/ranking/premium/classification">Playlist</a></li>
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!--
+    ## IMPORTANTE ##
+    Você tem todo o direito de usar esse material 
+    para seu próprio aprendizado. Professores também 
+    podem ter acesso a todo o conteúdo e usá-los com 
+    seus alunos. Porém todos os que usarem esse 
+    material - seja para qual for a finalidade - deverão 
+    manter a referência ao material original, disponível 
+    em https://github.com/gustavoguanabara/html-css. Este 
+    material não poderá ser utilizado em nenhuma hipótese 
+    para ser replicada - integral ou parcialmente - 
+    por autores/editoras/instituições para criar livros 
+    ou apostilas, com finalidades de obter ganho financeiro 
+    com ele.
+-->
+
+<!DOCTYPE html>
+<!-- Os IDs identificam elementos na página. Não é permitido que dois elementos tenham um mesmo ID em um mesmo documento HTML, fica ligadinho(a) aí! -->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificação em CSS</title>
+
+    <style>
+
+        * {
+            color: white;
+            text-align: justify;
+            font-size: 18px;
+        }
+
+        body {
+            background-color: gray;
+            margin: 0px;
+            padding: 0px;
+            background: url(jujutsu-kaisen-gojo-and-earth-2djbdzzqe2bpbqdu.jpg) top center/cover no-repeat;
+            background-size: 100% 231%;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 35px;
+            margin: 30px 0px 30px 0px;
+        }
+
+        p {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        
+        div {
+            display: inline-block; /*inline-block= deixa as fotos uma do lado da outra*/ /*já o flex deixa um em cima do outro*/
+            background-color: rgb(255, 255, 255);
+            width: 200px;
+            height: 200px;
+            border: rgb(0, 0, 0) solid;
+            border-radius: 5px; /*5px*/
+            margin: 20px;
+        }
+
+        div.area1 {
+            border-radius: 50%;
+        }
+
+        #area01 {
+            background-color: aliceblue;
+        }
+
+        div:hover.area1 {
+            box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.596);
+            border-radius: 50%; /*5px*/
+           /* visibility: visible; */ 
+            scale: 1.1; /*faz o meu dar uma pulada para frente como se tivesse clicando*/ 
+        }
+
+        .foto {
+            border-radius: 50%; /*não tinha antes*/
+            filter: blur(10px); /*10px*/
+            transition: 0.5;
+        }
+
+        .foto:hover {
+            filter: blur(0px);
+            transition: 0.5s;
+        }
+
+        /*
+
+        #area02 {
+            background-color: blue;
+        }
+
+        #area03 {
+            background-color: purple;
+        }
+
+        #area04 {
+            background-color: red;
+        }
+
+        #area05 {
+            background-color: antiquewhite;
+        }
+
+        #area06 {
+            background-color: rgb(228, 131, 5);
+        } 
+
+        */
+
+        
+    </style>
+
+</head>
+<body>
+    <h1>Identificadores em CSS</h1>
+    <p>No exercício anterior, vimos as <mark>classes</mark> e entendemos que vários elementos podem ter uma mesma classe. Mas se quisermos <mark>identificar</mark> os elementos, dando um "nome" específico para cada um, podemos usar os IDs. Em um mesmo documento, <strong>não podemos ter dois elementos com o mesmo ID!</strong></p>
+
+    <div id="area01" class="area1" > <a href="https://www.youtube.com/watch?v=gCcdC7Sbdt0" target="_blank"><img class="foto" src="https://i.pinimg.com/originals/a8/2e/8b/a82e8ba08c89f9ba3d7314ddfe43010e.jpg" alt="" width="200px"></a></div>
+
+
+    <!--
+
+    <div id="area02"> <img src=""></div>
+    <div id="area04"></div>
+    <div id="area05"></div>
+    <div id="area06"></div>
+
+    -->
+
+</body>
+</html>
