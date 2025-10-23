@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+
+    <style>
+        #container {
+            background-color: red;
+            height: 500px;
+            padding: 10px;
+
+            position: relative;
+            background-image: url('');
+        }
+        
+        #conteudo {
+            background-color: blue;
+            height: 200px;
+            width: 400px;
+
+            position: absolute;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%); /*o primeiro é direita e o segundo baixo*/ /*isso arruma o conteúdo no meio, mas tem que ter o RELATIVE e ABSOLUTE e o LEFT/TOP */
+        }
+    </style>
+
+</head>
+<body>
+    
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+
+</body>
+</html>
