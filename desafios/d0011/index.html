@@ -4,11 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio11</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sstyle.css">
+
+    <style>
+        body {
+            background: black url('espaco.jpg') top center fixed;
+            background-size: cover;
+            height: 96vh; 
+        }
+
+        .foto {
+            position: absolute;
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+    </style>
 </head>
 <body>
-    <div class="foto">
-        <img src="astronauta.png" alt="a">
+    <div>
+        <img class="foto" src="astronauta.png" alt="a">
     </div>
 </body>
 </html>
