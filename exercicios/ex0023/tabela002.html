@@ -13,6 +13,7 @@
         table {
             width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -25,6 +26,23 @@
             color: white;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        caption {
+            font-size: 2em;
+            font-weight: bolder;
+            background-color: rgb(190, 188, 188);
+            padding: 5px;
+        }
+
         td.numero {
             text-align: right;
         }
@@ -35,6 +53,7 @@
     <!--
         Anatomia para tabelas grandes
         Table
+            CAPTION /* <caption> */
             Thead <thead> cabeça
                 TR, TD, TH
             TBODY <tbody> corpo
@@ -43,10 +62,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>Tabela de População</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -161,10 +181,28 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="numero"><strong>213 421 037</strong></td>
             </tr>
         </tfoot>
     </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi iure quas nihil earum alias deleniti! Doloribus libero exercitationem officiis? Natus quis omnis commodi temporibus ex doloribus, quos optio distinctio dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellendus dolorum consequuntur ipsam architecto aperiam porro fugiat, ipsum quis corrupti, delectus in consectetur laudantium nemo dolore aliquid voluptates, vitae minus? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum quod quasi repellendus, in alias quae maiores tempora quaerat qui numquam, culpa impedit veritatis itaque corrupti? Fugiat ut aperiam laboriosam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae debitis facilis nemo blanditiis? Ad nihil debitis, error necessitatibus sit, illum quasi nulla fugiat eos excepturi possimus quidem distinctio nisi omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolore alias reiciendis placeat harum magnam, commodi tenetur cumque eveniet! Architecto repellat saepe quos ad deleniti ab blanditiis, ex libero aut.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi iure quas nihil earum alias deleniti! Doloribus libero exercitationem officiis? Natus quis omnis commodi temporibus ex doloribus, quos optio distinctio dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellendus dolorum consequuntur ipsam architecto aperiam porro fugiat, ipsum quis corrupti, delectus in consectetur laudantium nemo dolore aliquid voluptates, vitae minus? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum quod quasi repellendus, in alias quae maiores tempora quaerat qui numquam, culpa impedit veritatis itaque corrupti? Fugiat ut aperiam laboriosam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae debitis facilis nemo blanditiis? Ad nihil debitis, error necessitatibus sit, illum quasi nulla fugiat eos excepturi possimus quidem distinctio nisi omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolore alias reiciendis placeat harum magnam, commodi tenetur cumque eveniet! Architecto repellat saepe quos ad deleniti ab blanditiis, ex libero aut.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi iure quas nihil earum alias deleniti! Doloribus libero exercitationem officiis? Natus quis omnis commodi temporibus ex doloribus, quos optio distinctio dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellendus dolorum consequuntur ipsam architecto aperiam porro fugiat, ipsum quis corrupti, delectus in consectetur laudantium nemo dolore aliquid voluptates, vitae minus? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum quod quasi repellendus, in alias quae maiores tempora quaerat qui numquam, culpa impedit veritatis itaque corrupti? Fugiat ut aperiam laboriosam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae debitis facilis nemo blanditiis? Ad nihil debitis, error necessitatibus sit, illum quasi nulla fugiat eos excepturi possimus quidem distinctio nisi omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolore alias reiciendis placeat harum magnam, commodi tenetur cumque eveniet! Architecto repellat saepe quos ad deleniti ab blanditiis, ex libero aut.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi iure quas nihil earum alias deleniti! Doloribus libero exercitationem officiis? Natus quis omnis commodi temporibus ex doloribus, quos optio distinctio dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellendus dolorum consequuntur ipsam architecto aperiam porro fugiat, ipsum quis corrupti, delectus in consectetur laudantium nemo dolore aliquid voluptates, vitae minus? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum quod quasi repellendus, in alias quae maiores tempora quaerat qui numquam, culpa impedit veritatis itaque corrupti? Fugiat ut aperiam laboriosam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae debitis facilis nemo blanditiis? Ad nihil debitis, error necessitatibus sit, illum quasi nulla fugiat eos excepturi possimus quidem distinctio nisi omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolore alias reiciendis placeat harum magnam, commodi tenetur cumque eveniet! Architecto repellat saepe quos ad deleniti ab blanditiis, ex libero aut.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi iure quas nihil earum alias deleniti! Doloribus libero exercitationem officiis? Natus quis omnis commodi temporibus ex doloribus, quos optio distinctio dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellendus dolorum consequuntur ipsam architecto aperiam porro fugiat, ipsum quis corrupti, delectus in consectetur laudantium nemo dolore aliquid voluptates, vitae minus? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum quod quasi repellendus, in alias quae maiores tempora quaerat qui numquam, culpa impedit veritatis itaque corrupti? Fugiat ut aperiam laboriosam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae debitis facilis nemo blanditiis? Ad nihil debitis, error necessitatibus sit, illum quasi nulla fugiat eos excepturi possimus quidem distinctio nisi omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolore alias reiciendis placeat harum magnam, commodi tenetur cumque eveniet! Architecto repellat saepe quos ad deleniti ab blanditiis, ex libero aut.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi iure quas nihil earum alias deleniti! Doloribus libero exercitationem officiis? Natus quis omnis commodi temporibus ex doloribus, quos optio distinctio dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellendus dolorum consequuntur ipsam architecto aperiam porro fugiat, ipsum quis corrupti, delectus in consectetur laudantium nemo dolore aliquid voluptates, vitae minus? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum quod quasi repellendus, in alias quae maiores tempora quaerat qui numquam, culpa impedit veritatis itaque corrupti? Fugiat ut aperiam laboriosam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae debitis facilis nemo blanditiis? Ad nihil debitis, error necessitatibus sit, illum quasi nulla fugiat eos excepturi possimus quidem distinctio nisi omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolore alias reiciendis placeat harum magnam, commodi tenetur cumque eveniet! Architecto repellat saepe quos ad deleniti ab blanditiis, ex libero aut.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi iure quas nihil earum alias deleniti! Doloribus libero exercitationem officiis? Natus quis omnis commodi temporibus ex doloribus, quos optio distinctio dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellendus dolorum consequuntur ipsam architecto aperiam porro fugiat, ipsum quis corrupti, delectus in consectetur laudantium nemo dolore aliquid voluptates, vitae minus? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum quod quasi repellendus, in alias quae maiores tempora quaerat qui numquam, culpa impedit veritatis itaque corrupti? Fugiat ut aperiam laboriosam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae debitis facilis nemo blanditiis? Ad nihil debitis, error necessitatibus sit, illum quasi nulla fugiat eos excepturi possimus quidem distinctio nisi omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolore alias reiciendis placeat harum magnam, commodi tenetur cumque eveniet! Architecto repellat saepe quos ad deleniti ab blanditiis, ex libero aut.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi iure quas nihil earum alias deleniti! Doloribus libero exercitationem officiis? Natus quis omnis commodi temporibus ex doloribus, quos optio distinctio dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellendus dolorum consequuntur ipsam architecto aperiam porro fugiat, ipsum quis corrupti, delectus in consectetur laudantium nemo dolore aliquid voluptates, vitae minus? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum quod quasi repellendus, in alias quae maiores tempora quaerat qui numquam, culpa impedit veritatis itaque corrupti? Fugiat ut aperiam laboriosam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae debitis facilis nemo blanditiis? Ad nihil debitis, error necessitatibus sit, illum quasi nulla fugiat eos excepturi possimus quidem distinctio nisi omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolore alias reiciendis placeat harum magnam, commodi tenetur cumque eveniet! Architecto repellat saepe quos ad deleniti ab blanditiis, ex libero aut.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi iure quas nihil earum alias deleniti! Doloribus libero exercitationem officiis? Natus quis omnis commodi temporibus ex doloribus, quos optio distinctio dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellendus dolorum consequuntur ipsam architecto aperiam porro fugiat, ipsum quis corrupti, delectus in consectetur laudantium nemo dolore aliquid voluptates, vitae minus? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eum quod quasi repellendus, in alias quae maiores tempora quaerat qui numquam, culpa impedit veritatis itaque corrupti? Fugiat ut aperiam laboriosam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae debitis facilis nemo blanditiis? Ad nihil debitis, error necessitatibus sit, illum quasi nulla fugiat eos excepturi possimus quidem distinctio nisi omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolore alias reiciendis placeat harum magnam, commodi tenetur cumque eveniet! Architecto repellat saepe quos ad deleniti ab blanditiis, ex libero aut.</p>
 </body>
 </html>
