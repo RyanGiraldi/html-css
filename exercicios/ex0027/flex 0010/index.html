@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            display: flex;
+            background-color: lightsalmon;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px;
+            flex-shrink: 0; /* 0 não pode diminuir / 1 pode */
+            flex-grow: 0; /* 0 não pode aumentar e / 1 pode */       
+        }
+    </style>
+</head>
+<body>
+    <!-- A div pai é a container, quem recebe o display flex é só essa -->
+    <div class="container">
+
+        <!-- A div item é a filho -->
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        
+    </div>
+</body>
+</html>
